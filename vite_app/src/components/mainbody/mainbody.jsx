@@ -25,7 +25,11 @@ function MainBody() {
       title: "Bubuli | Coke Studio Bangla | Season One | RituRaj X Nandita",
       owner: "Coke Studio Bangla",
       verified: "",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "1.5M",
+      time: "2 days"
     },
     {
       id: 2,
@@ -35,7 +39,11 @@ function MainBody() {
       title: "INfinix Note 12: Amoled Helio G88 SoC!",
       owner: "ATC Android ToTo Company",
       verified: "",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "4.2M",
+      time: "2 days"
     },
     {
       id: 3,
@@ -45,7 +53,11 @@ function MainBody() {
       title: "My First UX Design case study-This got me my first job.",
       owner: "Saptarshi Prakash",
       verified: "off",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "4.8K",
+      time: "1 years"
     },
     {
       id: 4,
@@ -54,7 +66,11 @@ function MainBody() {
       title: "My Mix",
       owner: "Lopamudra Mitra, Anupam Roy, and more",
       verified: "off",
-      class:"title2"
+      class:"title2",
+      class2:"des2",
+      class3: "vd2",
+      veiw: "",
+      time: ""
     },
     {
       id: 5,
@@ -64,7 +80,11 @@ function MainBody() {
       title: "UX Design-What is it? (From AJ&Smart)",
       owner: "AJ&Smart",
       verified: "",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "150K",
+      time: "3 years"
     },
     {
       id: 6,
@@ -74,7 +94,11 @@ function MainBody() {
         "MIX - Mombati | Mohan Sharif | Dhakayia Dose | MAhib Ahsan ft Anika",
       owner: "Mohon Sharif, Odd Signature, Shayan Chowdhury Arnob, and more",
       verified: "off",
-      class:"title2"
+      class:"title2",
+      class2:"des2",
+      class3: "vd2",
+      veiw: "",
+      time: ""
     },
     {
       id: 7,
@@ -84,7 +108,11 @@ function MainBody() {
       title: " | 48 VISA-FREE",
       owner: "Nadir On The Go",
       verified: "off",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "1.7M",
+      time: "1 years"
     },
     {
       id: 8,
@@ -94,7 +122,11 @@ function MainBody() {
       title: "14 Advanced Tips to Design FASTER in Figma",
       owner: "Mizko",
       verified: "",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "53K",
+      time: "2 years"
     },
     {
       id: 9,
@@ -104,7 +136,11 @@ function MainBody() {
       title: "| 48 VISA-FREE",
       owner: "Nadir On The Go",
       verified: "",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "1.5M",
+      time: "2 days"
     },
     {
       id: 10,
@@ -114,17 +150,25 @@ function MainBody() {
       title: "random title",
       owner: "random",
       verified: "",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "1.5M",
+      time: "2 days"
     },
     {
-      id: 10,
+      id: 11,
       thn: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-2.png?raw=true",
       profile:
         "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%204-1.png?raw=true",
       title: "random title",
       owner: "random",
       verified: "",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "1.5M",
+      time: "2 days"
     },
     {
       id: 12,
@@ -134,7 +178,11 @@ function MainBody() {
       title: "Microsoft placement offer | 100% scholar",
       owner: "Saptarshi Prakash",
       verified: "off",
-      class:"title"
+      class:"title",
+      class2:"des",
+      class3: "vd",
+      veiw: "1.5M",
+      time: "2 days"
     },
   ];
   return (
@@ -198,7 +246,7 @@ function MainBody() {
                 <img src={con.profile} alt="" />
                 <p>{con.title}</p>
               </div>
-              <div className="des">
+              <div className={con.class2}>
                 <div className="Name">
                   <p>{con.owner}</p>
                   <img
@@ -206,6 +254,15 @@ function MainBody() {
                     src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/verified.png?raw=true"
                     alt=""
                   />
+                </div>
+                <div className={con.class3}>
+                  <div className="veiw">
+                    <p>{con.veiw} views</p>
+                  </div>
+                  <div className="dot"></div>
+                  <div className="veiw">
+                    <p>{con.time} ago</p>
+                  </div>
                 </div>
               </div>
             </div>
