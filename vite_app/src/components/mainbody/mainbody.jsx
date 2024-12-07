@@ -25,6 +25,7 @@ function MainBody() {
       title: "Bubuli | Coke Studio Bangla | Season One | RituRaj X Nandita",
       owner: "Coke Studio Bangla",
       verified: "",
+      class:"title"
     },
     {
       id: 2,
@@ -34,6 +35,7 @@ function MainBody() {
       title: "INfinix Note 12: Amoled Helio G88 SoC!",
       owner: "ATC Android ToTo Company",
       verified: "",
+      class:"title"
     },
     {
       id: 3,
@@ -43,6 +45,7 @@ function MainBody() {
       title: "My First UX Design case study-This got me my first job.",
       owner: "Saptarshi Prakash",
       verified: "off",
+      class:"title"
     },
     {
       id: 4,
@@ -51,6 +54,7 @@ function MainBody() {
       title: "My Mix",
       owner: "Lopamudra Mitra, Anupam Roy, and more",
       verified: "off",
+      class:"title2"
     },
     {
       id: 5,
@@ -60,6 +64,7 @@ function MainBody() {
       title: "UX Design-What is it? (From AJ&Smart)",
       owner: "AJ&Smart",
       verified: "",
+      class:"title"
     },
     {
       id: 6,
@@ -69,6 +74,7 @@ function MainBody() {
         "MIX - Mombati | Mohan Sharif | Dhakayia Dose | MAhib Ahsan ft Anika",
       owner: "Mohon Sharif, Odd Signature, Shayan Chowdhury Arnob, and more",
       verified: "off",
+      class:"title2"
     },
     {
       id: 7,
@@ -78,6 +84,7 @@ function MainBody() {
       title: " | 48 VISA-FREE",
       owner: "Nadir On The Go",
       verified: "off",
+      class:"title"
     },
     {
       id: 8,
@@ -87,6 +94,7 @@ function MainBody() {
       title: "14 Advanced Tips to Design FASTER in Figma",
       owner: "Mizko",
       verified: "",
+      class:"title"
     },
     {
       id: 9,
@@ -96,6 +104,7 @@ function MainBody() {
       title: "| 48 VISA-FREE",
       owner: "Nadir On The Go",
       verified: "",
+      class:"title"
     },
     {
       id: 10,
@@ -105,6 +114,7 @@ function MainBody() {
       title: "random title",
       owner: "random",
       verified: "",
+      class:"title"
     },
     {
       id: 10,
@@ -114,6 +124,7 @@ function MainBody() {
       title: "random title",
       owner: "random",
       verified: "",
+      class:"title"
     },
     {
       id: 12,
@@ -123,11 +134,13 @@ function MainBody() {
       title: "Microsoft placement offer | 100% scholar",
       owner: "Saptarshi Prakash",
       verified: "off",
+      class:"title"
     },
   ];
   return (
     <>
       <section className="mainbody">
+        <div className="header">
         <div className="search-container">
           <div className="input-item">
             <input type="text" name="search" id="search" placeholder="Search" />
@@ -176,11 +189,12 @@ function MainBody() {
           </div>
         </div>
         <div className="hl"></div>
+        </div>
         <div className="main-container">
           {content.map((con) => (
             <div key={con.id} className="main-item">
               <img src={con.thn} alt="" />
-              <div className="title">
+              <div className={con.class}>
                 <img src={con.profile} alt="" />
                 <p>{con.title}</p>
               </div>
