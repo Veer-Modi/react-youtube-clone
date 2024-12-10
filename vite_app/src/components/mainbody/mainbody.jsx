@@ -285,7 +285,7 @@ function MainBody() {
   const [searchTerm, setSearchTerm] = useState("travel vlogs"); // Default search term
 
   const fetchVideos = (query) => {
-    const API_KEY = "AIzaSyAlcCXP_XhhjkNPSbOuwKgp8j8q4Q-NmxY";
+    const API_KEY = "AIzaSyBjzV5b_49U4LeZtAESMNt9ovnGvPY0CrU";
     const maxResults = 10;
 
     setLoading(true);
