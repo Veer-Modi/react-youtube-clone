@@ -1,44 +1,19 @@
+import React, { useState, useEffect } from "react";
 import "./sidebar.css";
 
 function SideBar() {
-  const subs = [
-    {
-      id: 1,
-      tile: "Nadir on the go",
-      img: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201.png?raw=true",
-      class: "new",
-    },
-    {
-      id: 2,
-      tile: "Coke Studio Bangla",
-      img: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(1).png?raw=true",
-      class: "new",
-    },
-    {
-      id: 3,
-      tile: "MKBHD",
-      img: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(2).png?raw=true",
-      class: "",
-    },
-    {
-      id: 4,
-      tile: "Figma",
-      img: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(3).png?raw=true",
-      class: "new",
-    },
-    {
-      id: 5,
-      tile: "ATC Andriod ToTo C...",
-      img: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(4).png?raw=true",
-      class: "",
-    },
-    {
-      id: 6,
-      tile: "Alux.com",
-      img: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(5).png?raw=true",
-      class: "new",
-    },
-  ];
+  const [subs, setSubs] = useState([]);
+
+  useEffect(() => {
+    fetch("https://youtube-api-yekw.onrender.com/subs")
+      .then((res) => res.json())
+      .then((subs) => {
+        console.log(subs);
+        setSubs(subs);
+      })
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <>
       <section className="sidebar">
