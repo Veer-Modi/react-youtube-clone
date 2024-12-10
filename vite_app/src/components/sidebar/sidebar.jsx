@@ -5,7 +5,7 @@ function SideBar() {
   const [subs, setSubs] = useState([]);
 
   useEffect(() => {
-    fetch("https://youtube-api-yekw.onrender.com/subs")
+    fetch("https://youtube-api-nmsp.onrender.com/subs")
       .then((res) => res.json())
       .then((subs) => {
         console.log(subs);

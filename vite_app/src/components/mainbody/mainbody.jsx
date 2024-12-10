@@ -5,7 +5,7 @@ function MainBody() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch("https://youtube-api-yekw.onrender.com/videos")
+    fetch("https://youtube-api-nmsp.onrender.com/videos")
       .then((res) => res.json())
       .then((videos) => {
         console.log(videos);
@@ -17,7 +17,7 @@ function MainBody() {
   const [recop, setRecop] = useState([]);
 
   useEffect(() => {
-    fetch("https://youtube-api-yekw.onrender.com/recop")
+    fetch("https://youtube-api-nmsp.onrender.com/recop")
       .then((res) => res.json())
       .then((recop) => {
         console.log(recop);
