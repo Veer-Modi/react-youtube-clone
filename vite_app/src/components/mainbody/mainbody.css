@@ -40,9 +40,12 @@
     height: 5vh;
     width: 90%;
     padding: 0 0 0 1vw;
+    color: white;
 }
 
-.input-item>img {
+.input-item>button {
+    background: transparent;
+    border: none;
     padding: 0 1vw;
     cursor: pointer;
 }
@@ -147,6 +150,7 @@
     height: max-content;
     transition: all 200ms linear;
     cursor: pointer;
+    scale: 0.9;
 }
 
 .main-item:hover {
